@@ -59,3 +59,71 @@ button {
   touch-action: manipulation;
 }
 
+.game-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  margin: 25px auto;
+  flex-wrap: wrap;
+}
+
+.direction-pad {
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: 60px 60px;
+  gap: 8px;
+}
+
+.direction-pad button {
+  background: #263c60;
+  color: white;
+  border: 2px solid #00e5ff;
+  border-radius: 12px;
+  font-size: 25px;
+  font-weight: bold;
+  touch-action: none;
+}
+
+#up {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#down {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#right {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#fire {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #e53935;
+  color: white;
+  border: 2px solid white;
+  font-weight: bold;
+  touch-action: none;
+}
+
+#start {
+  display: block;
+  margin: 25px auto;
+}
+
+@media (orientation: landscape) {
+  .game-controls {
+    gap: 70px;
+  }
+}
+
