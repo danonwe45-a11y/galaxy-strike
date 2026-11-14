@@ -278,7 +278,7 @@ document.addEventListener("keyup", event => {
   if (event.key === "ArrowDown") held.down = false;
   if (event.code === "Space") held.fire = false;
 });
-alert("JavaScript is working!");
+
 
 
 
