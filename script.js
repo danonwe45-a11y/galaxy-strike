@@ -110,4 +110,9 @@ document.addEventListener("keydown", event => {
   if (event.key === "ArrowRight") moveRight();
   if (event.code === "Space") shoot();
 });
-                  
+
+// Mobile game controls
+window.moveLeft = moveLeft;
+window.moveRight = moveRight;
+window.shoot = shoot;
+
